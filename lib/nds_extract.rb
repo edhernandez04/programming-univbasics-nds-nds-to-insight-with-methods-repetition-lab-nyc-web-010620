@@ -36,6 +36,13 @@ directors_names
 end
 
 def total_gross(source)
+  gross_index = 0
+  total = 0
+while gross_index < source.size do
+  total += gross_for_director(source[gross_index])
+  gross_index += 1
+end
+total
   # Write this implementation
   #
   # Should use methods:
